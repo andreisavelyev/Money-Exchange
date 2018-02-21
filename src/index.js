@@ -10,8 +10,8 @@ module.exports = function makeExchange(currency) {
       return {error: "You are rich, my friend! We don't have so much coins for exchange"};
     }
 
-  while(currency>=0){
-    if (sum > 49){
+  while(currency>=1){
+    if (currency > 49){
       obj['H'] = Math.floor(currency/50);
       currency = currency - 50*obj['H'];
     }
